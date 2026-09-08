@@ -292,6 +292,7 @@ namespace FFXIVOpcodes.CN
     
     public static class Consts
     {
+        public const int BASE_INVENTORY_ACTION = 255;
         public const int MAIL_TAKE_ATTACHMENTS_RESULT = 622;
         public const int MAIL_DELETE_RESULT = 731;
         public const int MAIL_SEND_RESULT = 769;

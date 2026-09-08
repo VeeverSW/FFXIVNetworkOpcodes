@@ -1092,12 +1092,12 @@ class ConfigReader:
 def find_inventory_action_base(clientzone):
     """Recover BASE_INVENTORY_ACTION from the client binary.
 
-    The InventoryModifyHandler packet carries an `operation_type` field whose
+    The ItemOperation packet carries an `operation_type` field whose
     value is BASE + a fixed offset (Discard=+6, Move=+7, Exchange=+8,
     SplitStack=+9, CombineStack=+11, ...). Only BASE shifts every patch.
 
     Method (validated on CN 2026.06.18 / 7.51h2 -> 110):
-      * Each InventoryModifyHandler send wrapper builds a send-descriptor with
+      * Each ItemOperation send wrapper builds a send-descriptor with
         the opcode immediate stored at descriptor+0 and operation_type at
         descriptor+0x24.
       * The cross-container move family (Move/Exchange/CombineStack) is enqueued
@@ -1111,9 +1111,9 @@ def find_inventory_action_base(clientzone):
     SPECIAL_CONTAINER = 2006
     SANITY_OFFSETS = (6, 7, 8, 9, 11)
 
-    opcode = clientzone.content.get("InventoryModifyHandler")
+    opcode = clientzone.content.get("ItemOperation")
     if opcode is None:
-        print("BASE_INVENTORY_ACTION: InventoryModifyHandler opcode missing, skipping")
+        print("BASE_INVENTORY_ACTION: ItemOperation opcode missing, skipping")
         return None
 
     # Inventory send-wrapper functions (reuse the already-built send CallTable).

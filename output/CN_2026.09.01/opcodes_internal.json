@@ -2,6 +2,7 @@
     "version":"2026.09.01",
     "region":"CN",
     "consts":{
+        "BASE_INVENTORY_ACTION":255,
         "MAIL_TAKE_ATTACHMENTS_RESULT":622,
         "MAIL_DELETE_RESULT":731,
         "MAIL_SEND_RESULT":769
