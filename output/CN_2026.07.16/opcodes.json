@@ -550,6 +550,10 @@
                 "opcode":908
             },
             {
+                "name":"AdventurerPlateInfo",
+                "opcode":700
+            },
+            {
                 "name":"RequestAdventurerPlateError",
                 "opcode":977
             },

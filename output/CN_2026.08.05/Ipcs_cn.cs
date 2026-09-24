@@ -148,6 +148,7 @@ namespace FFXIVOpcodes.CN
         WorldVisitQueue = 0x02E6,
         GlamourDresserContents = 0x036B,
         GlamourPlates = 0x033C,
+        AdventurerPlateInfo = 0x028B,
         RequestAdventurerPlateError = 0x0345,
         PartyMemberPortrait1 = 0x03AE,
         PartyMemberPortraits4 = 0x014F,
