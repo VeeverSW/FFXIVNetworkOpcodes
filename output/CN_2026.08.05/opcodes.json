@@ -2,6 +2,7 @@
     "version":"2026.08.05",
     "region":"CN",
     "consts":{
+        "BASE_INVENTORY_ACTION":577,
         "MAIL_SEND_RESULT":185,
         "MAIL_DELETE_RESULT":638,
         "MAIL_TAKE_ATTACHMENTS_RESULT":671
@@ -547,10 +548,6 @@
             {
                 "name":"GlamourPlates",
                 "opcode":828
-            },
-            {
-                "name":"AdventurerPlateInfo",
-                "opcode":651
             },
             {
                 "name":"RequestAdventurerPlateError",

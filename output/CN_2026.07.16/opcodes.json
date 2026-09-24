@@ -110,6 +110,10 @@
                 "opcode":876
             },
             {
+                "name":"DirectorMapEffectStates",
+                "opcode":768
+            },
+            {
                 "name":"_record_unk29_",
                 "opcode":110
             },
@@ -362,6 +366,18 @@
                 "opcode":570
             },
             {
+                "name":"_record_unk112",
+                "opcode":206
+            },
+            {
+                "name":"_record_unk113",
+                "opcode":229
+            },
+            {
+                "name":"_record_unk114",
+                "opcode":406
+            },
+            {
                 "name":"UnMount",
                 "opcode":505
             },
@@ -532,10 +548,6 @@
             {
                 "name":"GlamourPlates",
                 "opcode":908
-            },
-            {
-                "name":"AdventurerPlateInfo",
-                "opcode":700
             },
             {
                 "name":"RequestAdventurerPlateError",
@@ -804,7 +816,7 @@
                 "opcode":201
             },
             {
-                "name":"DyeItem",
+                "name":"DyeInformation",
                 "opcode":490
             },
             {
@@ -916,7 +928,7 @@
                 "opcode":455
             },
             {
-                "name":"ChatHandler",
+                "name":"SendChatMessage",
                 "opcode":913
             },
             {
@@ -924,7 +936,7 @@
                 "opcode":343
             },
             {
-                "name":"InventoryModifyHandler",
+                "name":"ItemOperation",
                 "opcode":210
             },
             {
@@ -936,7 +948,7 @@
                 "opcode":370
             },
             {
-                "name":"SetSearchInfoHandler",
+                "name":"EditSearchInfo",
                 "opcode":643
             },
             {
@@ -944,11 +956,11 @@
                 "opcode":456
             },
             {
-                "name":"UpdatePositionInstance",
+                "name":"UpdatePositionHandlerInstance",
                 "opcode":410
             },
             {
-                "name":"Heartbeat",
+                "name":"PingSync",
                 "opcode":925
             },
             {
@@ -956,11 +968,11 @@
                 "opcode":807
             },
             {
-                "name":"ClientCountdownInitiate",
+                "name":"StartCountdown",
                 "opcode":882
             },
             {
-                "name":"GlamourPlateSave",
+                "name":"SaveGlamourPlate",
                 "opcode":729
             },
             {
@@ -980,7 +992,7 @@
                 "opcode":822
             },
             {
-                "name":"RequestFCProfile",
+                "name":"RequestFreeCompanyShortInfo",
                 "opcode":292
             },
             {
