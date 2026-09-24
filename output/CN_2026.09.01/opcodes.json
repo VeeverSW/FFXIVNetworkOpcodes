@@ -1,12 +1,7 @@
 {
     "version":"2026.09.01",
     "region":"CN",
-    "consts":{
-        "BASE_INVENTORY_ACTION":255,
-        "MAIL_TAKE_ATTACHMENTS_RESULT":622,
-        "MAIL_DELETE_RESULT":731,
-        "MAIL_SEND_RESULT":769
-    },
+    "consts":{},
     "lists":{
         "ServerZoneIpcType":[
             {
@@ -110,6 +105,10 @@
                 "opcode":210
             },
             {
+                "name":"DirectorMapEffectStates",
+                "opcode":134
+            },
+            {
                 "name":"_record_unk29_",
                 "opcode":206
             },
@@ -210,20 +209,8 @@
                 "opcode":202
             },
             {
-                "name":"ActorSetPos",
-                "opcode":930
-            },
-            {
                 "name":"LetterUpdate",
                 "opcode":779
-            },
-            {
-                "name":"PrepareZoning",
-                "opcode":792
-            },
-            {
-                "name":"WeatherChange",
-                "opcode":964
             },
             {
                 "name":"UpdateParty",
@@ -310,16 +297,8 @@
                 "opcode":812
             },
             {
-                "name":"AlliancePos",
-                "opcode":975
-            },
-            {
                 "name":"SpAlliancePos",
                 "opcode":117
-            },
-            {
-                "name":"PlaceMarker",
-                "opcode":725
             },
             {
                 "name":"PlaceFieldMarkerPreset",
@@ -362,6 +341,14 @@
                 "opcode":675
             },
             {
+                "name":"_record_unk112",
+                "opcode":209
+            },
+            {
+                "name":"_record_unk113",
+                "opcode":247
+            },
+            {
                 "name":"UnMount",
                 "opcode":538
             },
@@ -388,10 +375,6 @@
             {
                 "name":"ExamineSearchInfo",
                 "opcode":113
-            },
-            {
-                "name":"InventoryActionAck",
-                "opcode":810
             },
             {
                 "name":"MarketBoardItemListing",
@@ -442,10 +425,6 @@
                 "opcode":592
             },
             {
-                "name":"CEDirector",
-                "opcode":915
-            },
-            {
                 "name":"Logout",
                 "opcode":757
             },
@@ -476,10 +455,6 @@
             {
                 "name":"SubmarineProgressionStatus",
                 "opcode":629
-            },
-            {
-                "name":"SubmarineExplorationResult",
-                "opcode":130
             },
             {
                 "name":"CFPreferredRole",
@@ -514,14 +489,6 @@
                 "opcode":880
             },
             {
-                "name":"RSV",
-                "opcode":819
-            },
-            {
-                "name":"RSF",
-                "opcode":825
-            },
-            {
                 "name":"WorldVisitQueue",
                 "opcode":272
             },
@@ -532,14 +499,6 @@
             {
                 "name":"GlamourPlates",
                 "opcode":290
-            },
-            {
-                "name":"AdventurerPlateInfo",
-                "opcode":327
-            },
-            {
-                "name":"RequestAdventurerPlateError",
-                "opcode":218
             },
             {
                 "name":"PartyMemberPortrait1",
@@ -588,316 +547,12 @@
         ],
         "ClientZoneIpcType":[
             {
-                "name":"StandardControlsPivot",
-                "opcode":363
-            },
-            {
-                "name":"EnterTerritoryEvent",
-                "opcode":756
-            },
-            {
-                "name":"DeleteLetter",
-                "opcode":731
-            },
-            {
-                "name":"PartyMemberKick",
-                "opcode":639
-            },
-            {
-                "name":"CreateLocalLinkshellRequest",
-                "opcode":812
-            },
-            {
-                "name":"SetCWLSMemberRank",
-                "opcode":674
-            },
-            {
-                "name":"RequestPlaytime",
-                "opcode":973
-            },
-            {
-                "name":"SocialListRequest",
-                "opcode":234
-            },
-            {
-                "name":"ApplyFieldMarkerPreset",
-                "opcode":564
-            },
-            {
-                "name":"RequestCrossworldLinkshells",
-                "opcode":936
-            },
-            {
-                "name":"UnkCall2",
-                "opcode":174
-            },
-            {
-                "name":"TakeLetterAttachments",
-                "opcode":622
-            },
-            {
-                "name":"SearchFellowships",
-                "opcode":464
-            },
-            {
-                "name":"RemoveFriend",
-                "opcode":948
-            },
-            {
-                "name":"CrossworldLinkshellMemberListRequest",
-                "opcode":265
-            },
-            {
-                "name":"LeaveCrossworldLinkshell",
-                "opcode":390
-            },
-            {
-                "name":"WorldInteraction",
-                "opcode":499
-            },
-            {
-                "name":"InviteCharacter",
-                "opcode":281
-            },
-            {
-                "name":"Dive",
-                "opcode":930
-            },
-            {
-                "name":"CheckCWLinkshellNameAvailability",
-                "opcode":955
-            },
-            {
-                "name":"StrategyBoardUpdate",
-                "opcode":864
-            },
-            {
-                "name":"RewardDeliveryRequest",
-                "opcode":841
-            },
-            {
-                "name":"ViewLetter",
-                "opcode":704
-            },
-            {
-                "name":"InviteReply2",
-                "opcode":392
-            },
-            {
-                "name":"Disconnected",
-                "opcode":335
-            },
-            {
-                "name":"PartyLeave",
-                "opcode":166
-            },
-            {
-                "name":"LogOut",
-                "opcode":382
-            },
-            {
-                "name":"RequestMarketBoardItems",
-                "opcode":825
-            },
-            {
-                "name":"GMCommandName",
-                "opcode":621
-            },
-            {
-                "name":"PartyDisband",
-                "opcode":805
-            },
-            {
-                "name":"RequestCharaInfoFromContentIds",
-                "opcode":933
-            },
-            {
-                "name":"RequestMailbox",
-                "opcode":147
-            },
-            {
-                "name":"ShareStrategyBoard",
-                "opcode":705
-            },
-            {
-                "name":"EquipGearset",
-                "opcode":916
-            },
-            {
-                "name":"QueueRoulette",
-                "opcode":572
-            },
-            {
-                "name":"InviteCharacterToCWLS",
-                "opcode":386
-            },
-            {
-                "name":"CrossRealmListingsRequest1",
-                "opcode":480
-            },
-            {
-                "name":"FallFromArena",
-                "opcode":367
-            },
-            {
-                "name":"Trade",
-                "opcode":354
-            },
-            {
-                "name":"SetFriendGroupIcon",
-                "opcode":766
-            },
-            {
-                "name":"RequestAdventurerPlate",
-                "opcode":500
-            },
-            {
-                "name":"PlaceFurniture",
-                "opcode":397
-            },
-            {
-                "name":"CreateNewCrossworldLinkshell",
-                "opcode":239
-            },
-            {
-                "name":"InviteReply",
-                "opcode":495
-            },
-            {
-                "name":"SearchPlayers",
-                "opcode":765
-            },
-            {
-                "name":"ReadyCheckResponse",
-                "opcode":851
-            },
-            {
-                "name":"GMCommandName2",
-                "opcode":122
-            },
-            {
                 "name":"RenameCrossworldLinkshell",
                 "opcode":519
             },
             {
-                "name":"GMCommand",
-                "opcode":342
-            },
-            {
-                "name":"WalkOutsideEvent",
-                "opcode":659
-            },
-            {
-                "name":"RealtimeStrategyBoardFinished",
-                "opcode":681
-            },
-            {
-                "name":"InitiateReadyCheck",
-                "opcode":158
-            },
-            {
-                "name":"LinkshellInviteReply",
-                "opcode":661
-            },
-            {
-                "name":"StrategyBoardReceived",
-                "opcode":160
-            },
-            {
-                "name":"DyeInformation",
-                "opcode":115
-            },
-            {
-                "name":"InitRequest",
-                "opcode":777
-            },
-            {
-                "name":"PartyChangeLeader",
-                "opcode":108
-            },
-            {
-                "name":"QueueDuties",
-                "opcode":540
-            },
-            {
-                "name":"ContentFinderAction",
-                "opcode":677
-            },
-            {
-                "name":"RequestSearchInfo",
-                "opcode":323
-            },
-            {
-                "name":"NewDiscovery",
-                "opcode":132
-            },
-            {
-                "name":"DisbandCrossworldLinkshell",
-                "opcode":196
-            },
-            {
-                "name":"RemoveCWLSMember",
-                "opcode":380
-            },
-            {
-                "name":"Config",
-                "opcode":204
-            },
-            {
-                "name":"RequestFellowships",
-                "opcode":283
-            },
-            {
-                "name":"ViewCrossRealmListing",
-                "opcode":615
-            },
-            {
-                "name":"SetClientLanguage",
-                "opcode":984
-            },
-            {
                 "name":"ZoneJump",
                 "opcode":438
-            },
-            {
-                "name":"SendLetter",
-                "opcode":769
-            },
-            {
-                "name":"RequestBlacklist",
-                "opcode":236
-            },
-            {
-                "name":"RequestOwnSearchInfo",
-                "opcode":407
-            },
-            {
-                "name":"TranslateFurniture",
-                "opcode":417
-            },
-            {
-                "name":"FinishLoading",
-                "opcode":143
-            },
-            {
-                "name":"StartWalkInEvent",
-                "opcode":492
-            },
-            {
-                "name":"StartTalkEvent",
-                "opcode":761
-            },
-            {
-                "name":"CrossRealmListingsRequest2",
-                "opcode":256
-            },
-            {
-                "name":"OpenTreasure",
-                "opcode":737
-            },
-            {
-                "name":"SetFreeCompanyGreeting",
-                "opcode":542
             },
             {
                 "name":"EquipGearset2",
@@ -908,88 +563,12 @@
                 "opcode":701
             },
             {
-                "name":"ActionRequest",
-                "opcode":811
-            },
-            {
-                "name":"ActionRequestGroundTargeted",
-                "opcode":212
-            },
-            {
-                "name":"SendChatMessage",
-                "opcode":415
-            },
-            {
-                "name":"ClientTrigger",
-                "opcode":297
-            },
-            {
-                "name":"ItemOperation",
-                "opcode":254
-            },
-            {
-                "name":"MarketBoardPurchaseHandler",
-                "opcode":876
-            },
-            {
                 "name":"MarketBoardRequestItemListingInfo",
                 "opcode":605
             },
             {
-                "name":"EditSearchInfo",
-                "opcode":195
-            },
-            {
-                "name":"UpdatePositionHandler",
-                "opcode":956
-            },
-            {
-                "name":"UpdatePositionHandlerInstance",
-                "opcode":287
-            },
-            {
                 "name":"PingSync",
                 "opcode":528
-            },
-            {
-                "name":"WorldTravel",
-                "opcode":434
-            },
-            {
-                "name":"StartCountdown",
-                "opcode":831
-            },
-            {
-                "name":"SaveGlamourPlate",
-                "opcode":929
-            },
-            {
-                "name":"SubmitAdventurerPlate",
-                "opcode":886
-            },
-            {
-                "name":"SubmitPortraitData",
-                "opcode":309
-            },
-            {
-                "name":"SendBardPerformanceBuffer",
-                "opcode":266
-            },
-            {
-                "name":"ExamineRequestComments",
-                "opcode":838
-            },
-            {
-                "name":"RequestFreeCompanyShortInfo",
-                "opcode":359
-            },
-            {
-                "name":"MeldMateriaRequest",
-                "opcode":105
-            },
-            {
-                "name":"RequestRecruitingPartyCount",
-                "opcode":751
             },
             {
                 "name":"EventAction1",

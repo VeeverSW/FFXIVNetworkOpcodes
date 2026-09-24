@@ -110,6 +110,10 @@
                 "opcode":550
             },
             {
+                "name":"DirectorMapEffectStates",
+                "opcode":279
+            },
+            {
                 "name":"_record_unk29_",
                 "opcode":250
             },
@@ -360,6 +364,18 @@
             {
                 "name":"EquipDisplayFlags",
                 "opcode":827
+            },
+            {
+                "name":"_record_unk112",
+                "opcode":806
+            },
+            {
+                "name":"_record_unk113",
+                "opcode":688
+            },
+            {
+                "name":"_record_unk114",
+                "opcode":695
             },
             {
                 "name":"UnMount",

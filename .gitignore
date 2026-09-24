@@ -3,3 +3,5 @@
 *.dat
 *.dmp
 **/__pycache__/
+CLAUDE.md
+.claude/

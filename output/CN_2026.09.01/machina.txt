@@ -19,7 +19,7 @@ PlayerSpawn|3B2
 NpcSpawn|1C4
 NpcSpawn2|26A
 ActorMove|334
-ActorSetPos|3A2
+ActorSetPos|{ActorSetPos}
 ActorGauge|28B
 PresetWaymark|8D
 Waymark|E9
