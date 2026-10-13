@@ -1415,6 +1415,9 @@ outpath = lambda name: os.path.join(
     output_dir,
     name,
 )
+with open(outpath("build_number.txt"), "w+") as f:
+    f.write(str(VersionID))
+print(f'Build number {VersionID} saved on {outpath("build_number.txt")}')
 opcodes_internal_path = outpath("opcodes_internal.json")
 
 if Region != "Global":
